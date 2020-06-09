@@ -1,10 +1,8 @@
-# Tec_Emergentes_II_Practica4
-Conexión a Bases de Datos con JDBC<%-- 
-    Document   : login
-  
-    Author     : Eva Carmen Huaylliri Ajata
---%>
-
+<%
+    if(session.getAttribute("logueado") != "OK"){
+        response.sendRedirect("login.jsp");
+    }
+%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,23 +11,37 @@ Conexión a Bases de Datos con JDBC<%--
         <title>JSP Page</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body background="imag3.jpg">
-       
-        <div style="text-align:center;">
-        <h3>Login</h3>
+    <body background="img5.jpg">
+            <center>
+        <h3>PRACTICA N° 4</h3>
+        <h4>Conexión a Bases de Datos con JDBC</h4>
+        <table border="5">
+            <tr>
+                <th>Carrera:</th>
+                <td>Ingenieria de Sistemas</td>
+                <td rowspan="20"><h1>H.</h1></td>
+            </tr>
+            <tr>
+                <th>Materia:</th>
+                <td>Tecnologías Emergentes II</td>
+            </tr>
+            <tr>
+                <th>Apellidos y nombres:</th>
+                <td>Huaylliri Ajata Eva Carmen</td>
+            </tr>
+            <tr>
+                <th>C.I:</th>
+                <td>9125413 L.P.</td>
+            </tr>
+            <tr>
+                <th>Lugar y Fecha:</th>
+                <td>El Alto, 22 de Mayo del 2020</td>
+            </tr>
+        </table>
         
-        <form action="LoginControlador" method="post">
-            <label>Usuario  </label>
-            <td><input type="text" name="usuario"></td>
-            <br><br>
-            <label>Password  </label>
-            <td><input type="password" name="password"></td>
-            <br><br>
-            <input type="submit" value="Ingresar">
-            
-        </form>
-        </div>
-        </font>
-        
+        <h3>Bienvenido a Mi Blog...!</h3>
+        <br>
+        <a href="MainController">Entrar</a>
+            </center>
     </body>
 </html>
