@@ -1,0 +1,57 @@
+
+body{
+}
+fieldset{
+    margin-bottom: 30px;
+}
+legend{
+    border: solid 5px blueviolet;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 50px;
+    margin-top: 5px;
+    font-family: Pristina;
+    color: blue;
+}
+h3{
+   
+    font-size: 40px;
+    color: blue;
+    font-family: Pristina;
+}
+h4{
+   
+    font-size: 25px;
+    margin-top: 5px;
+    font-family: Pristina;
+}
+h5{
+    
+    font-size: 17px;
+    color: green;
+    font-family: arial;
+}
+label{
+    font-size: 25px;
+    font-family: Pristina;
+    color:red;
+    
+}
+td{
+    font-size: 20px;
+    font-family: Kristen ITC;
+    color: brown;
+}
+a{
+    font-size: 20px;
+    font-family: Yu Gothic UI Semibold;
+   
+}
+
+
+
